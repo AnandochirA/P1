@@ -12,6 +12,7 @@ public class Die
         rand = new Random(seed);
     }
 
+    //constructor of die with side-values specified by the given array
     public Die(int seed, int[] GivenOutcomes)
     {
         outcomes = new int[GivenOutcomes.length];
@@ -24,7 +25,7 @@ public class Die
 
     public int nextRoll()
     {
-        int roll = rand.nextInt(outcomes.length);
+        int roll = rand.nextInt(outcomes.length); //generating random number between 0 to outcome.length - 1
         return outcomes[roll];
     }
 }
