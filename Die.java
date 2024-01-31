@@ -15,7 +15,8 @@ public class Die
     public Die(int seed, int[] GivenOutcomes)
     {
         outcomes = new int[GivenOutcomes.length];
-        for (int i = 0; i < GivenOutcomes.length; i++) {
+        for (int i = 0; i < GivenOutcomes.length; i++) 
+        {
             outcomes[i] = GivenOutcomes[i];
         }
         rand = new Random(seed);
