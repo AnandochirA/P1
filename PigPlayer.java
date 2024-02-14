@@ -1,3 +1,5 @@
+package pig;
+
 import java.util.Scanner;
 
 public interface PigPlayer
