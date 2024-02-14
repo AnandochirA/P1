@@ -1,5 +1,6 @@
-import java.util.Random;
+package pig;
 
+import java.util.Random;
 public class Die
 {
     private Random rand;
@@ -12,14 +13,10 @@ public class Die
         rand = new Random(seed);
     }
 
-    //constructor of die with side-values specified by the given array
-    public Die(int seed, int[] GivenOutcomes)
+    public Die(int seed, int[] GivenOutcomes) //constructor of die with side-values specified by the given array
     {
         outcomes = new int[GivenOutcomes.length];
-        for (int i = 0; i < GivenOutcomes.length; i++) 
-        {
-            outcomes[i] = GivenOutcomes[i];
-        }
+        for (int i = 0; i < GivenOutcomes.length; i++) {outcomes[i] = GivenOutcomes[i];}
         rand = new Random(seed);
     }
 
